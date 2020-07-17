@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    head {color: crimson; font: 3em Roboto;}
-    h1{color: crimson; font: bold 4em Roboto;}
-    .thin-red-border{border-color:rgb(233, 54, 54); border-width: 5px; border-style: solid;}
-    .medium-images{width:300px; border-radius: 50%;}
-    .black-background{background-color: black;}
-</style>
-<head>
+<head class="cheese-background">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Okotoks Pizza</title>
-    <h1>Welcome to Okotoks Pizza</h1>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<section id="Header">
+    <h1>Welcome to Okotoks Pizza</h1>
+</section>
+<section id="content">
     <main>
-        <div class="black-background">
-        <iframe width="600" height="480" class="thin-red-border" src="https://www.youtube.com/embed/5MfYsHz4VJU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <br></br>
-        <img class="medium-images thin-red-border" src="https://siouxfalls.business/wp-content/uploads/2017/03/pizza.png" alt="Good Looking Pizza">
-        <img class="medium-images thin-red-border" src="https://8xdr12e9hk0355djl1l23bnv-wpengine.netdna-ssl.com/wp-content/uploads/2014/11/ingredients-for-french-bread-pizzas.jpg" alt="Pizza ingredients">
-        <img class="medcdium-images thin-red-border" src="https://image.shutterstock.com/image-vector/cook-pizza-vector-illustration-isolated-260nw-119871796.jpg" alt="Pizza chef">
-        </div>
-    </main>
+    <div class="black-background">
+        <span>
+        <iframe id="PizzaVideo" width="600" height="480" class="thin-red-border center" src="https://www.youtube.com/embed/5MfYsHz4VJU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </span>
+        <span>
+        <p id= "intro-paragraph" class="paragraph-typing">
+            There are no short cuts when it comes to our passion. We pull out all the stops, giving you the ‘wow’ flavour, experience and consistency you not only want, but deserve. Our customers keep coming back, again, again, and again.
+            We’re a small but nimble family-run take out and delivery pizza shop in Okotoks, Alberta. When we’re not scouring the globe (okay, the prairies) for the freshest, ripest and boldest ingredients, we’re crafting perfect pizzas for you and your family to enjoy.
+            From hot Hawaiians and classic Canadians to crispy wings and decadent fudge brownies, everything at Okotoks Pizza is baked with love.
+        </p>
+        </span>
+    </div>
     <div>
+        <span>
+        <img id="TastyPizza" class="medium-images thin-red-border" src="https://siouxfalls.business/wp-content/uploads/2017/03/pizza.png" alt="Good Looking Pizza">
+        <img id="PizzaIngredients" class="medium-images thin-red-border" src="https://8xdr12e9hk0355djl1l23bnv-wpengine.netdna-ssl.com/wp-content/uploads/2014/11/ingredients-for-french-bread-pizzas.jpg" alt="Pizza ingredients">
+        <img id="PizzaChef" class="medcdium-images thin-red-border" src="https://image.shutterstock.com/image-vector/cook-pizza-vector-illustration-isolated-260nw-119871796.jpg" alt="Pizza chef">
+        </span>
+        <span>
+        <p id= "second-paragraph" class="paragraph-typing">
+            After watching his parents run a very successful pizza business in Calgary, Matt Cleveland learned how to make people happy, one topping at a time. Opening the doors to Okotoks Pizza in 2004, Matt has managed to evolve the fresh, traditional Greek-style pizza his family perfected back in the mid 80s to a more modern and convenient comfort food for today’s family on the go.
+            Okotoks Pizzas are made with only the freshest ingredients like mozzarella, roma tomatoes, made-from-scratch sauce and even features premium toppings like Sorriso Pepperoni, salami from Valbella meats and a healthy Flax crust. You feel good about ordering it.
+            You feel good about eating it. And you feel even better knowing we're always ready to make you more.
+        </p>   
+        </span>
+    </div>
+    </main>
+</section>
+<section id="footer">
+    <div class="thin-red-border">
         <a href="https://www.google.ca" target="_blank">Google!</a>
         <a href="https://www.yelp.ca" target="_blank">Yelp!</a>
         <a href="mailto:info@okotokspizza.ca">Mailme!</a>
@@ -31,5 +49,6 @@
         <a href="location.html" target="_blank">Come see us here</a>
         <a href="tel:(403) 555-5555">403-555-5555</a>
     </div>
+</section>
 </body>
 </html>

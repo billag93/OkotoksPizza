@@ -1,0 +1,24 @@
+head {color: crimson; font: 3em Roboto;}
+h1{color: crimson; font: bold 4em Roboto; text-align: center; text-transform: capitalize; text-shadow: yellow;}
+.thin-red-border{border-color:rgb(233, 54, 54); border-width: 5px; border-style: solid;}
+.medium-images{width:300px; border-radius: 50%;}
+.black-background{background-color: black;}
+.paragraph-typing{color: blanchedalmond; font-size: 20px; font: arial; float: left;}
+.cheese-background{color:yellow;}
+.center{align-self: center;}
+
+
+#Header{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr 1fr 1fr ;
+}
+
+#intro-paragraph{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: justify;
+}
+
+#second-paragraph{
+    text-align: justify;
+}
