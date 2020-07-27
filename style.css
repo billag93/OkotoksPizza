@@ -1,84 +1,141 @@
-
-.thin-red-border{border-color:rgb(233, 54, 54); border-width: 5px; border-style: solid;}
-.medium-images{width:300px; border-radius: 50%;}
-.small-images{width:30px; height: 30px; align-items: center;
-    justify-items: center}
-.black-background{background-color: black;}
-.cheese-background{color:yellow;}
-.center{align-self: center;}
-
-html{ background-color: dimgrey;}
-
-section > h1 {background-color: crimson;
-width: 100px;}
-section > h2{color: crimson; 
-    font-weight: 5rem; 
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify; 
-    text-align: center;
-    text-transform: capitalize;
-    text-shadow: black;
-    background-color: rgb(70, 4, 17);}
-
-div h3{
-    background-color: crimson;
-    font-weight: 8rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    text-align: center;
+*{
+    margin: 0;
+    padding:0;
 }
 
-span+p{ 
-    background-color: crimson;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    text-align: justify;
+.boxcenter{
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    border: red;
+    border-style: solid;
+    background-color: rgb(209, 181, 181);
+    padding: 5%;
 }
 
-         
+.mediumimage{
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    border: red;
+    border-style: solid;
+    border-radius: 10%;
+}
 
-#Header{
+.headertitle{
     display: grid;
-    grid-template-columns: 1fr 6fr 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    row-gap: 100px;
+    grid-template-rows: 1fr;
+}
+
+html{background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190619/ourmid/pngtree-delicious-pizza-background-material-image_140751.jpg);
+}
+
+#body{
+    align-items: center;
+    justify-items: center;
+}
+
+
+ul>li{
+    font-family:'Raleway',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-sub-title;
+    font-weight: bold;
+    align-items: center;
+    justify-items: center;
+}
+
+#header{
+    display: grid;
+    grid-template-columns:3fr 1fr 1fr 1.5fr 1fr 1fr 3fr;
+    column-gap: 5px;
+    position: sticky;
+    width: 100%;
+    height: 10vh;
+    background-color: lightgrey;
+    opacity: 0.6;
+    top: 0px;
+    margin-top: auto;
+    align-items: center;
+    justify-items: center;
+    z-index: 1;
+}
+
+#ourmission{
+    display: grid;
+    font-family:'Raleway',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-sub-title;
+    font-weight: bold;
+    color: mintcream;
+    align-items: center;
+    justify-items: center;
+    background-image: url(https://img.theculturetrip.com/768x432/wp-content/uploads/2015/12/56-3959916-2591139538-4c2e553505-b.jpg);
+    width: 100%;
+    height: 400px;
+}
+
+div p{
+   border: red;
+   border-style: solid;
+   background-color: rgb(209, 181, 181);
+   height: 250px;
+   position: relative;
+   padding: 2%;
+   font-family:'Raleway',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-sub-title;
+   font-weight: bold;
+
+}
+
+#ourgoal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    top: 20px;
+    font-family:'Raleway',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-sub-title;
+    font-weight: bold;
+    color: mintcream;
+}
+
+#pizzacommercial{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    row-gap: 100px;
+    grid-template-rows: 1fr;
+    position: relative;
+    margin-top: 20px;
+    left: 315px;
 }
 
 #footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: slategrey;
+    column-gap: 20px;
+    min-height: 10vh;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    color: red;
+    font-weight: bold;
     align-items: center;
     justify-items: center;
+    opacity: 0.8;
 }
 
-#videoparagraph{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: justify;
+a{
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 100px;
 }
 
-#middlepictures{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
+a:hover{
+    width: 400px;
 }
-
-#TastyPizza:link{
-    width: 800px;
-}
-
-#TastyPizza:hover{
-    transform: rotate(180deg);
-}
-
-a:link{
-    color: darkblue;
-}
-
-a:visited{
-    color: deeppink;
-}
-
