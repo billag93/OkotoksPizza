@@ -20,7 +20,15 @@
     border: red;
     border-style: solid;
     border-radius: 10%;
+    transition-property: width;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
 }
+
+img:hover{
+    width: 400px;
+}
+
 
 .headertitle{
     display: grid;
