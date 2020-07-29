@@ -25,9 +25,6 @@
     transition-timing-function: ease-in-out;
 }
 
-img:hover{
-    width: 400px;
-}
 
 
 .headertitle{
@@ -44,14 +41,8 @@ html{background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/201
 #body{
     align-items: center;
     justify-items: center;
-}
-
-
-ul>li{
-    font-family:'Raleway',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-sub-title;
-    font-weight: bold;
-    align-items: center;
-    justify-items: center;
+    position: relative;
+    min-height: 100vh;
 }
 
 #header{
@@ -68,6 +59,7 @@ ul>li{
     align-items: center;
     justify-items: center;
     z-index: 1;
+    font-family: 'Raleway',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-sub-title;
 }
 
 #ourmission{
@@ -125,8 +117,8 @@ div p{
     grid-template-columns: repeat(3, 1fr);
     background-color: slategrey;
     column-gap: 20px;
-    min-height: 10vh;
     width: 100%;
+    height: 10vh;
     margin-left: auto;
     margin-right: auto;
     font-family: Arial, Helvetica, sans-serif;
@@ -135,15 +127,94 @@ div p{
     align-items: center;
     justify-items: center;
     opacity: 0.8;
+    position: fixed;
+    bottom: 0px;
+}
+
+#gallery{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    column-gap: 5%;
+    width: 90%;
+    row-gap:5% ;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    position: absolute;
+}
+  
+
+#gallery >img {
+    width: 300px;
+    height:300px
 }
 
 a{
     transition-property: width;
-    transition-duration: 1s;
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    width: 100px;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    font-size: small;
+    font-weight: bold;
 }
 
 a:hover{
-    width: 400px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+@media only screen and (min-width:480px){
+    #gallery>img{
+        width: 100px;
+        height: 100px;
+    }
+    #footer{
+        font-size: small;
+    }
+    #header{
+        font-size: small;
+    }
+
+    div p{
+        display: none;
+    }
+    #pizzacommercial{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        row-gap: 2%;
+        grid-template-rows: 1fr;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:900px) {
+    #gallery> img{
+        width: 200px;
+        height: 200px;
+    }
+    #footer{
+        font-size: medium;
+    }
+    #header{
+        font-size: medium;
+    }
+
+    div p{
+        border-color: green;
+        border-style: double;
+        background-color: rgb(71, 192, 71);
+        height: 150px;
+        position: relative;
+        padding: 2%;
+        font-family:'Raleway',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-sub-title;
+        font-weight: bold;
+    }
+    #pizzacommercial{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        row-gap: 2%;
+        grid-template-rows: 1fr;
+        position: absolute;
+    }
 }
